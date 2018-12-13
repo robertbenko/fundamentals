@@ -2,11 +2,11 @@ package com.benko.exercise.sort;
 
 public class BubbleSorter {
 
-    public int[] sort(int[] numbers) {
+    public void sort(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
             swapElements(numbers);
         }
-        return numbers;
+        printNumbers(numbers);
     }
 
     private static int[] swapElements(int[] numbers) {
