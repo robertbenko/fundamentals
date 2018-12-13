@@ -6,23 +6,20 @@ public class BubbleSorter {
         for (int i = 0; i < numbers.length; i++) {
             swapElements(numbers);
         }
-        printNumbers(numbers);
     }
 
-    private static int[] swapElements(int[] numbers) {
+    private static void swapElements(int[] numbers) {
         for (int i = 0; i < numbers.length-1; i++) {
-            if (isGeraterThan(i, i+1, numbers)) {
+            if (isGreaterThan(i, i+1, numbers)) {
                 int temp;
                 temp = numbers[i + 1];
                 numbers[i + 1] = numbers[i];
                 numbers[i] = temp;
             }
         }
-        int[] swapedElements = numbers;
-        return swapedElements;
     }
 
-    private static boolean isGeraterThan(int x, int y, int[] numbers) {
+    private static boolean isGreaterThan(int x, int y, int[] numbers) {
         return numbers[x]>numbers[y];
     }
 
