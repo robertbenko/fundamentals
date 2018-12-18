@@ -2,12 +2,11 @@ package com.benko.exercise.sort;
 
 class BubbleSorter {
 
-    static void sort(int[] numbers) {
-        BubbleSorter bubbleSorter = new BubbleSorter();
+    void sort(int[] numbers) {
         for (int n: numbers) {
             for (int i = 0; i < numbers.length - 1; i++){
-                if (bubbleSorter.isGreaterThan(i, i+1, numbers)) {
-                    bubbleSorter.swapElements(i, numbers);
+                if (isGreaterThan(i, i+1, numbers)) {
+                    swapElements(i, numbers);
                 }
             }
         }
