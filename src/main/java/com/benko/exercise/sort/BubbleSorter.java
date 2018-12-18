@@ -11,7 +11,6 @@ class BubbleSorter {
                 }
             }
         }
-        SortingApp.printNumbers(numbers);
     }
 
     private boolean isGreaterThan(int current, int next, int[] numbers) {
