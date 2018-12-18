@@ -22,6 +22,4 @@ class BubbleSorter {
                 numbers[next] = numbers[current];
                 numbers[current] = temp;
     }
-
-
 }

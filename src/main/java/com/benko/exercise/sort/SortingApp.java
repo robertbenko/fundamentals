@@ -6,7 +6,7 @@ public class SortingApp {
         BubbleSorter bubbleSorter = new BubbleSorter();
         int[] numbers = new int[]{4, 2, 0, 2, 10, 1, 9, 12, 3, 5};
         bubbleSorter.sort(numbers);
-        SortingApp.printNumbers(numbers);
+        printNumbers(numbers);
     }
 
     private static void printNumbers(int[] sortedNumbers) {
