@@ -6,7 +6,7 @@ class BubbleSorter {
         for (int n: numbers) {
             for (int i = 0; i < numbers.length - 1; i++){
                 if (isGreaterThan(i, i+1, numbers)) {
-                    swapElements(i, numbers);
+                    swapElements(i, i+1, numbers);
                 }
             }
         }
@@ -16,11 +16,11 @@ class BubbleSorter {
         return numbers[current] > numbers[next];
     }
 
-    private void swapElements(int actual, int[] numbers) {
+    private void swapElements(int current, int next, int[] numbers) {
                 int temp;
-                temp = numbers[actual + 1];
-                numbers[actual + 1] = numbers[actual];
-                numbers[actual] = temp;
+                temp = numbers[next];
+                numbers[next] = numbers[current];
+                numbers[current] = temp;
     }
 
 
