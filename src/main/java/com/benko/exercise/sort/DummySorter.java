@@ -8,11 +8,11 @@ import java.util.stream.IntStream;
  * it tries to sort array by swapping its elements randomly,
  * believing that maybe some day it will guess correct order.
  */
-class DummySorter {
+class DummySorter implements Sorter{
 
     private final Random random = new Random();
 
-    void sort(int[] numbers) {
+    public void sort(int[] numbers) {
         IntStream.range(0, numbers.length).forEach(i ->
             swapElements(i, randomDestination(numbers), numbers)
         );
