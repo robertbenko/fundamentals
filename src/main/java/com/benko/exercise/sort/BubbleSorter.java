@@ -1,8 +1,8 @@
 package com.benko.exercise.sort;
 
-class BubbleSorter {
+class BubbleSorter implements Sorter{
 
-    void sort(int[] numbers) {
+    public void sort(int[] numbers) {
         for (int n: numbers) {
             for (int i = 0; i < numbers.length - 1; i++){
                 if (isGreaterThan(i, i+1, numbers)) {
